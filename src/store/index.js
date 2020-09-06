@@ -72,8 +72,8 @@ export default new Vuex.Store({
 
     async getToken({ commit }){ //obtiene el token con el client id y el secreto
       const url = 'https://accounts.spotify.com/api/token';
-      const clientId = "f2c70c6233e24168aea491a96912cc34";
-      const secret = "11aa38c393f342519d2a98290ce8a598";
+      const clientId = "";
+      const secret = "";
       const fullEncoded = btoa(`${clientId}:${secret}`);
       const data = {
           grant_type: "client_credentials"
